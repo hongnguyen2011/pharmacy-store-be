@@ -11,5 +11,7 @@ public partial class Imageproduct
 
     public Guid IdProduct { get; set; }
 
+    public DateTime? CreateAt { get; set; }
+
     public virtual Product IdProductNavigation { get; set; } = null!;
 }

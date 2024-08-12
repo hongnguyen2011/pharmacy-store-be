@@ -11,7 +11,13 @@ public partial class Detailorder
 
     public decimal Price { get; set; }
 
-    public Guid IdOrder { get; set; }
+    public Guid? IdOrder { get; set; }
 
-    public virtual Order IdOrderNavigation { get; set; } = null!;
+    public Guid? IdProduct { get; set; }
+
+    public DateTime? CreateAt { get; set; }
+
+    public virtual Order? IdOrderNavigation { get; set; }
+
+    public virtual Product? IdProductNavigation { get; set; }
 }

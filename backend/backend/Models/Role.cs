@@ -9,5 +9,7 @@ public partial class Role
 
     public string? Name { get; set; }
 
+    public DateTime? CreateAt { get; set; }
+
     public virtual ICollection<User> Users { get; set; } = new List<User>();
 }

@@ -1,9 +1,7 @@
 ﻿using backend.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace backend.Controllers
 {
@@ -35,7 +33,7 @@ namespace backend.Controllers
                 data = _data
             }); ;
         }
-        [HttpGet]
+        [HttpGet, Authorize]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategory(Guid id)
         {
             if (db.Categories == null)
@@ -54,7 +52,8 @@ namespace backend.Controllers
                 data = _data
             }); ;
         }
-        [HttpPost("add")]
+        [HttpPost("add"), Authorize]
+
         public async Task<ActionResult> AddCategory([FromBody] Category category)
         {
             var _category = await db.Categories.Where(x=>x.Slug.Equals(category.Slug)).ToListAsync();
@@ -75,8 +74,9 @@ namespace backend.Controllers
                 data = category
             });
         }
-        [HttpPut("edit")]
-        public async Task<ActionResult> Edit(Category category)
+        [HttpPut("edit"), Authorize]
+
+        public async Task<ActionResult> Edit([FromBody]Category category)
         {
             var _category = await db.Categories.FindAsync(category.Id);
             if (_category == null)
@@ -95,7 +95,8 @@ namespace backend.Controllers
                 status = 200
             });
         }
-        [HttpDelete("delete")]
+        [HttpDelete("delete"), Authorize]
+
         public async Task<ActionResult> Delete([FromBody] Guid id)
         {
             if (db.Categories == null)

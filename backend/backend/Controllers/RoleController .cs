@@ -1,4 +1,5 @@
 ﻿using backend.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
@@ -35,7 +36,8 @@ namespace backend.Controllers
                 data = _data
             }); ;
         }
-        [HttpGet]
+        [HttpGet, Authorize]
+
         public async Task<ActionResult<IEnumerable<Role>>> GetRole(Guid id)
         {
             if (db.Roles == null)
@@ -54,7 +56,8 @@ namespace backend.Controllers
                 data = _data
             }); ;
         }
-        [HttpPost("add")]
+        [HttpPost("add"), Authorize]
+
         public async Task<ActionResult> AddRole([FromBody] Role role)
         {
             var _role = await db.Roles.FirstOrDefaultAsync(x => String.Compare(x.Name, role.Name,StringComparison.OrdinalIgnoreCase) == 0);
@@ -75,8 +78,9 @@ namespace backend.Controllers
                 data = role
             });
         }
-        [HttpPut("edit")]
-        public async Task<ActionResult> Edit(Role role)
+        [HttpPut("edit"), Authorize]
+
+        public async Task<ActionResult> Edit([FromBody] Role role)
         {
             var _role = await db.Roles.FindAsync(role.Id);
             if (_role == null)
@@ -95,7 +99,8 @@ namespace backend.Controllers
                 status = 200
             });
         }
-        [HttpDelete("delete")]
+        [HttpDelete("delete"), Authorize]
+
         public async Task<ActionResult> Delete([FromBody] Guid id)
         {
             if (db.Roles == null)
