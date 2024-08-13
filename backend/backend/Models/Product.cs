@@ -30,6 +30,4 @@ public partial class Product
     public virtual Category? IdCategoryNavigation { get; set; }
 
     public virtual User? IdUserNavigation { get; set; }
-
-    public virtual ICollection<Imageproduct> Imageproducts { get; set; } = new List<Imageproduct>();
 }

@@ -19,8 +19,6 @@ public partial class FinalContext : DbContext
 
     public virtual DbSet<Detailorder> Detailorders { get; set; }
 
-    public virtual DbSet<Imageproduct> Imageproducts { get; set; }
-
     public virtual DbSet<Order> Orders { get; set; }
 
     public virtual DbSet<Product> Products { get; set; }
@@ -37,7 +35,7 @@ public partial class FinalContext : DbContext
     {
         modelBuilder.Entity<Category>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__CATEGORY__3213E83FDCB7AD69");
+            entity.HasKey(e => e.Id).HasName("PK__CATEGORY__3213E83FC858A792");
 
             entity.ToTable("CATEGORY");
 
@@ -58,7 +56,7 @@ public partial class FinalContext : DbContext
 
         modelBuilder.Entity<Detailorder>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__DETAILOR__3213E83F89EE28CC");
+            entity.HasKey(e => e.Id).HasName("PK__DETAILOR__3213E83FB86AD187");
 
             entity.ToTable("DETAILORDERS");
 
@@ -78,40 +76,16 @@ public partial class FinalContext : DbContext
 
             entity.HasOne(d => d.IdOrderNavigation).WithMany(p => p.Detailorders)
                 .HasForeignKey(d => d.IdOrder)
-                .HasConstraintName("FK__DETAILORD__idOrd__52593CB8");
+                .HasConstraintName("FK__DETAILORD__idOrd__5165187F");
 
             entity.HasOne(d => d.IdProductNavigation).WithMany(p => p.Detailorders)
                 .HasForeignKey(d => d.IdProduct)
-                .HasConstraintName("FK__DETAILORD__idPro__534D60F1");
-        });
-
-        modelBuilder.Entity<Imageproduct>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__IMAGEPRO__3213E83FD5535896");
-
-            entity.ToTable("IMAGEPRODUCT");
-
-            entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
-            entity.Property(e => e.CreateAt)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime")
-                .HasColumnName("createAt");
-            entity.Property(e => e.IdProduct).HasColumnName("idProduct");
-            entity.Property(e => e.Name)
-                .HasMaxLength(255)
-                .IsUnicode(false)
-                .HasColumnName("name");
-
-            entity.HasOne(d => d.IdProductNavigation).WithMany(p => p.Imageproducts)
-                .HasForeignKey(d => d.IdProduct)
-                .HasConstraintName("FK__IMAGEPROD__idPro__5812160E");
+                .HasConstraintName("FK__DETAILORD__idPro__52593CB8");
         });
 
         modelBuilder.Entity<Order>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__ORDER__3213E83FC4CEAEC9");
+            entity.HasKey(e => e.Id).HasName("PK__ORDER__3213E83F41EF022F");
 
             entity.ToTable("ORDER");
 
@@ -130,16 +104,11 @@ public partial class FinalContext : DbContext
                 .HasDefaultValueSql("((0))")
                 .HasColumnType("decimal(38, 2)")
                 .HasColumnName("total");
-
-            entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.Orders)
-                .HasForeignKey(d => d.IdUser)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK__ORDER__idUser__4D94879B");
         });
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__PRODUCT__3213E83FC3479D77");
+            entity.HasKey(e => e.Id).HasName("PK__PRODUCT__3213E83F19E0A2D9");
 
             entity.ToTable("PRODUCT");
 
@@ -180,7 +149,7 @@ public partial class FinalContext : DbContext
 
         modelBuilder.Entity<Role>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__ROLE__3213E83FDAB71AFD");
+            entity.HasKey(e => e.Id).HasName("PK__ROLE__3213E83FB1BB57DC");
 
             entity.ToTable("ROLE");
 
@@ -198,7 +167,7 @@ public partial class FinalContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__USER__3213E83FC03DE3D8");
+            entity.HasKey(e => e.Id).HasName("PK__USER__3213E83FA569F0A3");
 
             entity.ToTable("USER");
 

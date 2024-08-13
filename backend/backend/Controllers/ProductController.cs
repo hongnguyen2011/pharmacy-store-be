@@ -79,8 +79,8 @@ namespace backend.Controllers
                 category
             });
         }
-        [HttpPost("add"), Authorize]
-
+        [HttpPost("add")]
+        //[Authorize]
         public async Task<ActionResult> AddProduct([FromBody] Product product)
         {
             await db.Products.AddAsync(product);

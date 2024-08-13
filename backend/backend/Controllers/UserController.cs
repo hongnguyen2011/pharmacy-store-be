@@ -35,19 +35,34 @@ namespace backend.Controllers
                     status = 404
                 });
             }
-        var _data = await db.Users.Select(x => new
-        {
-            x.Id,
-            x.Name,
-            x.Email,
-            x.Password,
-            x.Phone,
-            x.Address,
-            x.CreateAt,
-            x.IdRole,
-            x.PathImg,
+            var _data = from x in db.Users
+                        join role in db.Roles on x.IdRole equals role.Id
+                        select new
+                        {
+                            x.Id,
+                            x.Name,
+                            x.Email,
+                            x.Password,
+                            x.Phone,
+                            x.Address,
+                            x.CreateAt,
+                            x.IdRole,
+                            x.PathImg,
+                            nameRole = role.Name,
+                        };
+        //var _data = await db.Users.Select(x => new
+        //{
+        //    x.Id,
+        //    x.Name,
+        //    x.Email,
+        //    x.Password,
+        //    x.Phone,
+        //    x.Address,
+        //    x.CreateAt,
+        //    x.IdRole,
+        //    x.PathImg
 
-        }).ToListAsync();
+        //}).ToListAsync();
             return Ok(new
             {
                 message = "Lấy dữ liệu thành công!",

@@ -52,8 +52,8 @@ namespace backend.Controllers
                 data = _data
             }); ;
         }
-        [HttpPost("add"), Authorize]
-
+        [HttpPost("add")]
+        //[Authorize]
         public async Task<ActionResult> AddCategory([FromBody] Category category)
         {
             var _category = await db.Categories.Where(x=>x.Slug.Equals(category.Slug)).ToListAsync();
