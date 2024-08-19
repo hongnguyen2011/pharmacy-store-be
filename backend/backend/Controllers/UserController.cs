@@ -117,7 +117,6 @@ namespace backend.Controllers
                 data = user
             });
         }
-        [Authorize]
         [HttpPut("edit"), Authorize]
 
         public async Task<ActionResult> Edit([FromBody] User user)
@@ -278,11 +277,46 @@ namespace backend.Controllers
                 role = role.Name
             });
         }
+        [HttpPost("changepass"), Authorize]
+        public ActionResult ChangePassword([FromBody] ChangePassword changePassword)
+        {
+            var user = db.Users.Find(changePassword.idUser);
+            if (user == null)
+            {
+                return Ok(new
+                {
+                    message = "Người dùng không tồn tại!",
+                    status = 200
+                });
+            }
+            if (!BCrypt.Net.BCrypt.Verify(changePassword.oldPassword, user.Password))
+            {
+                return Ok(new
+                {
+                    message = "Mật khẩu cũ không đúng!",
+                    status = 400
+                });
+            }
+            user.Password = BCrypt.Net.BCrypt.HashPassword(changePassword.newPassword);
+            db.Entry(db.Users.FirstOrDefault(x => x.Id == user.Id)).CurrentValues.SetValues(user);
+            db.SaveChanges();
+            return Ok(new
+            {
+                message = "Thay đổi mật khẩu thành công!",
+                status = 200
+            });
+        }
 
     }
     public class Login
     {
         public string email { get; set; }
         public string password { get; set; }
+    }
+    public class ChangePassword
+    {
+        public Guid idUser { get; set; }
+        public string oldPassword { get; set; }
+        public string newPassword { get; set; }
     }
 }

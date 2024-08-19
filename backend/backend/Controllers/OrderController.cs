@@ -208,7 +208,7 @@ namespace backend.Controllers
                     status = 404
                 });
             }
-            var _data = await db.Orders.Where(x => x.IdUser == idUser).Where(x => x.Status == 1 || x.Status == 2).ToListAsync();
+            var _data = await db.Orders.Where(x => x.IdUser == idUser).Where(x => x.Status == 1 || x.Status == 2).OrderByDescending(x => x.CreateAt).ToListAsync();
             return Ok(new
             {
                 message = "Lấy dữ liệu thành công!",

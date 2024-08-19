@@ -39,6 +39,7 @@ namespace backend.Controllers
                 product.IdUser,
                 product.PathImg,
                 category.Slug,
+                product.Type,
                 product.IdCategory,
                 categoryName = category.Name
             };

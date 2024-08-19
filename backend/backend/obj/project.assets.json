@@ -4317,11 +4317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Final Cường\\CuaHangBanThuoc\\backend\\backend\\backend.csproj",
+      "projectUniqueName": "D:\\CuaHangBanThuoc\\backend\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "D:\\Final Cường\\CuaHangBanThuoc\\backend\\backend\\backend.csproj",
+      "projectPath": "D:\\CuaHangBanThuoc\\backend\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Final Cường\\CuaHangBanThuoc\\backend\\backend\\obj\\",
+      "outputPath": "D:\\CuaHangBanThuoc\\backend\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
