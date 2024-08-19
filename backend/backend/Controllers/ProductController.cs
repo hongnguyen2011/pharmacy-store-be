@@ -50,7 +50,7 @@ namespace backend.Controllers
                 data = _data
             }); ;
         }
-        [HttpGet, Authorize]
+        [HttpGet]
 
         public async Task<ActionResult<IEnumerable<Product>>> GetProduct(Guid id)
         {

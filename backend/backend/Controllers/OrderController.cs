@@ -125,7 +125,7 @@ namespace backend.Controllers
             try
             {
                 db.Orders.Remove(_order);
-                await db.SaveChangesAsync();
+                db.SaveChanges();
                 return Ok(new
                 {
                     message = "Xóa thành công!",
@@ -147,6 +147,7 @@ namespace backend.Controllers
 
         public async Task<ActionResult<Order>> GetOrderNotPayment(Guid idUser)
         {
+            decimal amount = 0;
             var _data = await db.Orders.Where(x => x.IdUser == idUser).Where(x => x.Status == 0).FirstOrDefaultAsync();
             if(_data == null)
             {
@@ -156,16 +157,25 @@ namespace backend.Controllers
                     status = 400
                 });
             }
+            var detail = await db.Detailorders.Where(x => x.IdOrder == _data.Id).ToListAsync();
+            if (detail.Count > 0)
+            {
+                foreach (var item in detail)
+                {
+                    amount += item.Price * item.Quantity;
+                }
+            }
             return Ok(new
             {
                 message = "Đã có order!",
                 status = 200,
-                data = _data
+                data = _data,
+                total = amount
             });
         }
         [HttpGet("confirm"), Authorize]
 
-        public async Task<ActionResult> Confirm(Guid idUser, int status)
+        public async Task<ActionResult> Confirm(Guid idUser, int status, int type)
         {
             var _order = await db.Orders.Where(x => x.IdUser == idUser).Where(x => x.Status == 0).FirstOrDefaultAsync();
             decimal amount = 0;
@@ -186,7 +196,7 @@ namespace backend.Controllers
                 }
             }
             _order.CreateAt = DateTime.Now;
-            _order.Total = amount;
+            _order.Total = amount + (decimal) (type == 1 ? 30000 : 0);
             _order.Status = status;
             db.Entry(await db.Orders.FirstOrDefaultAsync(x => x.Id == _order.Id)).CurrentValues.SetValues(_order);
             await db.SaveChangesAsync();
@@ -208,7 +218,7 @@ namespace backend.Controllers
                     status = 404
                 });
             }
-            var _data = await db.Orders.Where(x => x.IdUser == idUser).Where(x => x.Status == 1 || x.Status == 2).OrderByDescending(x => x.CreateAt).ToListAsync();
+            var _data = await db.Orders.Where(x => x.IdUser == idUser).OrderByDescending(x => x.CreateAt).ToListAsync();
             return Ok(new
             {
                 message = "Lấy dữ liệu thành công!",
