@@ -1,4 +1,4 @@
-using backend.Models;
+using backend;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;

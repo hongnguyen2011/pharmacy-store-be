@@ -1,23 +1,23 @@
 ﻿
-using backend.Models;
+using backend;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Final.Controllers
 {
     [ApiController]
-    [Route("api/thongke")]
+    [Route("api/statistical")]
     [Authorize]
 
-    public class ThongKeController : ControllerBase
+    public class StatisticalController : ControllerBase
     {
         private readonly FinalContext _db;
-        public ThongKeController(FinalContext db)
+        public StatisticalController(FinalContext db)
         {
             _db = db;
         }
-        [HttpGet("doanhthu")]
-        public async Task<ActionResult> DoanhThu()
+        [HttpGet("revenue")]
+        public async Task<ActionResult> revenue()
         {
             List<decimal> listTotal = new List<decimal>();
             DateTime day = DateTime.Now;

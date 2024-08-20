@@ -7,7 +7,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace backend.Controllers
 {
@@ -23,7 +22,7 @@ namespace backend.Controllers
             db = _db;
             _config = cf;
         }
-        [HttpGet("all"), Authorize]
+        [HttpGet("all")]
 
         public async Task<ActionResult<IEnumerable<User>>> GetAllUser()
         {
@@ -50,19 +49,6 @@ namespace backend.Controllers
                             x.PathImg,
                             nameRole = role.Name,
                         };
-        //var _data = await db.Users.Select(x => new
-        //{
-        //    x.Id,
-        //    x.Name,
-        //    x.Email,
-        //    x.Password,
-        //    x.Phone,
-        //    x.Address,
-        //    x.CreateAt,
-        //    x.IdRole,
-        //    x.PathImg
-
-        //}).ToListAsync();
             return Ok(new
             {
                 message = "Lấy dữ liệu thành công!",
@@ -70,6 +56,8 @@ namespace backend.Controllers
                 data = _data
             }); ;
         }
+
+
         [HttpGet, Authorize]
 
         public async Task<ActionResult<IEnumerable<User>>> GetUser(Guid id)
@@ -90,6 +78,9 @@ namespace backend.Controllers
                 data = _data
             }); ;
         }
+
+
+
         [HttpPost("register")]
         public async Task<ActionResult> AddUser([FromBody] User user)
         {
@@ -117,7 +108,7 @@ namespace backend.Controllers
                 data = user
             });
         }
-        [HttpPut("edit"), Authorize]
+        [HttpPut("edit")]
 
         public async Task<ActionResult> Edit([FromBody] User user)
         {
@@ -142,7 +133,7 @@ namespace backend.Controllers
                 role = role.Name
             });
         }
-        [HttpDelete("delete"), Authorize]
+        [HttpDelete("delete")]
 
         public async Task<ActionResult> Delete([FromBody] Guid id)
         {

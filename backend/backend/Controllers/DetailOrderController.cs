@@ -165,5 +165,59 @@ namespace backend.Controllers
                 data  = _data
             });
         }
+
+
+        [HttpPut("increase")]
+
+        public async Task<ActionResult> Increase([FromBody] Guid id)
+        {
+            var _detail = await db.Detailorders.FindAsync(id);
+            if (_detail == null)
+            {
+                return Ok(new
+                {
+                    message = "Dữ liệu không tồn tại!",
+                    status = 400
+                });
+            }
+            _detail.Quantity = _detail.Quantity + 1;
+            db.Entry(await db.Detailorders.FirstOrDefaultAsync(x => x.Id == _detail.Id)).CurrentValues.SetValues(_detail);
+            await db.SaveChangesAsync();
+            return Ok(new
+            {
+                message = "Sửa thành công!",
+                status = 200
+            });
+        }
+        [HttpPut("decrease")]
+
+        public async Task<ActionResult> Decrease([FromBody] Guid id)
+        {
+            var _detail = await db.Detailorders.FindAsync(id);
+            if (_detail == null)
+            {
+                return Ok(new
+                {
+                    message = "Dữ liệu không tồn tại!",
+                    status = 400
+                });
+            }
+            if(_detail.Quantity == 1) {
+                db.Detailorders.Remove(_detail);
+                await db.SaveChangesAsync();
+                return Ok(new
+                {
+                    status = 200
+                });
+            }
+            _detail.Quantity = _detail.Quantity -1;
+            db.Entry(await db.Detailorders.FirstOrDefaultAsync(x => x.Id == _detail.Id)).CurrentValues.SetValues(_detail);
+            await db.SaveChangesAsync();
+            return Ok(new
+            {
+                message = "Sửa thành công!",
+                status = 200
+            });
+        }
     }
 }
