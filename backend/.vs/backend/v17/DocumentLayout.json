@@ -1,66 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\CuaHangBanThuoc-main\\backend\\",
+  "WorkspaceRootPath": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\controllers\\detailordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main2\\cuahangbanthuoc-main\\backend\\backend\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main2\\cuahangbanthuoc-main\\backend\\backend\\controllers\\detailordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\controllers\\detailordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\controllers\\rolecontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\controllers\\rolecontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main2\\cuahangbanthuoc-main\\backend\\backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\finalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\finalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\models\\detailorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\models\\detailorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\controllers\\statisticalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main2\\cuahangbanthuoc-main\\backend\\backend\\controllers\\statisticalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\controllers\\statisticalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main2\\cuahangbanthuoc-main\\backend\\backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main\\backend\\backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|e:\\cuahangbanthuoc-main2\\cuahangbanthuoc-main\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{756EA841-62B3-4040-97A6-23ECCB924305}|backend\\backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -87,194 +51,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DetailOrderController.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\DetailOrderController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\DetailOrderController.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\DetailOrderController.cs",
-              "RelativeToolTip": "backend\\Controllers\\DetailOrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:15:25.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoleController .cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\RoleController .cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\RoleController .cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\RoleController .cs",
-              "RelativeToolTip": "backend\\Controllers\\RoleController .cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:15:17.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:06:51.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FinalContext.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\FinalContext.cs",
-              "RelativeDocumentMoniker": "backend\\FinalContext.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\FinalContext.cs",
-              "RelativeToolTip": "backend\\FinalContext.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:06:44.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\User.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\User.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\User.cs",
-              "RelativeToolTip": "backend\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:06:43.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Role.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Role.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Role.cs",
-              "RelativeToolTip": "backend\\Models\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:06:42.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Product.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Product.cs",
-              "RelativeToolTip": "backend\\Models\\Product.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:06:39.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Order.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Order.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Order.cs",
-              "RelativeToolTip": "backend\\Models\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:06:38.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Detailorder.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Detailorder.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Detailorder.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Detailorder.cs",
-              "RelativeToolTip": "backend\\Models\\Detailorder.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:06:34.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Category.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Models\\Category.cs",
-              "RelativeToolTip": "backend\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:06:33.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StatisticalController.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\StatisticalController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\StatisticalController.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\StatisticalController.cs",
-              "RelativeToolTip": "backend\\Controllers\\StatisticalController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA6wBIAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:04:12.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\appsettings.json",
-              "RelativeDocumentMoniker": "backend\\appsettings.json",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\appsettings.json",
-              "RelativeToolTip": "backend\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-19T08:37:18.646Z",
+              "Title": "Dockerfile",
+              "DocumentMoniker": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Dockerfile",
+              "RelativeDocumentMoniker": "backend\\Dockerfile",
+              "ToolTip": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Dockerfile",
+              "RelativeToolTip": "backend\\Dockerfile",
+              "ViewState": "AQIAAAEAAAAAAAAAAADwvxAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-21T08:54:09.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\CategoryController.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "backend\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAqwAQAAAAAAAAA",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\OrderController.cs",
+              "ToolTip": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "backend\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAqwFsAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T08:34:34.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T05:46:05.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "backend",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\backend.csproj",
+              "DocumentIndex": 1,
+              "Title": "DetailOrderController.cs",
+              "DocumentMoniker": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\DetailOrderController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\DetailOrderController.cs",
+              "ToolTip": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\DetailOrderController.cs",
+              "RelativeToolTip": "backend\\Controllers\\DetailOrderController.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T05:45:51.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\ProductController.cs",
+              "ToolTip": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "backend\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAA3wHYAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T03:30:42.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StatisticalController.cs",
+              "DocumentMoniker": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\StatisticalController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\StatisticalController.cs",
+              "ToolTip": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\StatisticalController.cs",
+              "RelativeToolTip": "backend\\Controllers\\StatisticalController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T04:22:51.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "backend.csproj",
+              "DocumentMoniker": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\backend.csproj",
               "RelativeDocumentMoniker": "backend\\backend.csproj",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\backend.csproj",
+              "ToolTip": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\backend.csproj",
               "RelativeToolTip": "backend\\backend.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-19T08:34:32.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\UserController.cs",
-              "ToolTip": "E:\\CuaHangBanThuoc-main\\backend\\backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "backend\\Controllers\\UserController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T08:34:24.848Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-20T04:21:04.909Z"
             }
           ]
         }

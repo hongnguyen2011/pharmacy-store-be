@@ -4317,11 +4317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CuaHangBanThuoc-main\\backend\\backend\\backend.csproj",
+      "projectUniqueName": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "E:\\CuaHangBanThuoc-main\\backend\\backend\\backend.csproj",
+      "projectPath": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\Phong Vu\\.nuget\\packages\\",
-      "outputPath": "E:\\CuaHangBanThuoc-main\\backend\\backend\\obj\\",
+      "outputPath": "E:\\CuaHangBanThuoc-main2\\CuaHangBanThuoc-main\\backend\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

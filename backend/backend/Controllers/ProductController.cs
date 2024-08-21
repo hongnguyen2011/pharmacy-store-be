@@ -81,7 +81,7 @@ namespace backend.Controllers
             });
         }
         [HttpPost("add")]
-        //[Authorize]
+        [Authorize]
         public async Task<ActionResult> AddProduct([FromBody] Product product)
         {
             await db.Products.AddAsync(product);
