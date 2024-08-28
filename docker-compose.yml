@@ -1,0 +1,30 @@
+version: '3.4'
+
+networks:
+  demoapiapp:
+
+services:
+  demoappdb:
+    container_name: app-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+        - 8002:1433
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=@Hongnguyen2011
+    networks:
+        - demoapiapp
+  backend:
+    container_name: demo-app
+    image: ${DOCKER_REGISTRY-}backend
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+        - 8001:80     
+    depends_on:
+        - demoappdb
+    environment:
+        - DB_HOST=16.0.1121
+        - DB_NAME=FINAL
+        - DB_SA_PASSWORD=@Hongnguyen2011
